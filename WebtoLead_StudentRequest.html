@@ -1,0 +1,89 @@
+<apex:page >
+    <style>
+        /* Add styles for form fields */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Add styles for the button */
+        input[type="submit"] {
+            background-color: #23256E;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+           form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        html {
+  text-align: center;
+}
+        h1 {
+            font-size: 24px; /* Set the font size to 24 pixels */
+            font-weight: bold; /* Make the text bold */
+        }
+        h3 {
+            font-size: 14px; /* Set the font size to 14 pixels */
+        }
+      
+    </style>
+    
+    <img src="/resource/1701318469000/AutoCertHeader1800x200?" alt="Header Image" style="width: 100%;">
+    <br></br>
+    <br></br>
+    <h1>Welcome to AutoCert Student Request Portal!</h1>
+    <br></br>
+    <h3>Please fill in the form below for the classes you would like either a certificate or course information regarding.</h3>
+<br></br>
+<br></br>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DHn000002T3W3" method="POST">
+        <!-- Your form fields with the specified style classes -->
+        <label for="name">Contact Name</label>
+        <input id="name" maxlength="80" name="name" size="20" type="text" />
+
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" size="20" type="text" />
+
+        <label for="phone">Phone</label>
+        <input id="phone" maxlength="40" name="phone" size="20" type="text" />
+
+        Class Attended<select  id="00NHn00000JpKTK" name="00NHn00000JpKTK" title="Product"><option value="">--Click to Select--</option><option value="Foundations of Sustainable Building Practices">Foundations of Sustainable Building Practices</option>
+<option value="Green Building Principles and Strategies">Green Building Principles and Strategies</option>
+<option value="Sustainable Architecture and Design Concepts">Sustainable Architecture and Design Concepts</option>
+<option value="Advanced Technologies for Eco-Friendly Construction">Advanced Technologies for Eco-Friendly Construction</option>
+<option value="Building with Environmental Sustainability in Mind">Building with Environmental Sustainability in Mind</option>
+</select><br>
+
+Credit Needed (select all that apply)<select  id="00NHn00000JMxjJ" multiple="multiple" name="00NHn00000JMxjJ" title="Certification Type"><option value="BUILD">BUILD</option>
+<option value="CarbonCatch">CarbonCatch</option>
+<option value="GreenStream">GreenStream</option>
+<option value="REGEN">REGEN</option>
+</select><br>
+
+        <!-- Your submit button with the specified style class -->
+        <input type="submit" name="submit">
+    </input>
+    </br>
+    </br>
+    </form>
+    </META>
+    </img>
+</apex:page>
